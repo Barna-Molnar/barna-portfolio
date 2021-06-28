@@ -4,24 +4,27 @@ import Ptext from './Ptext';
 
 const AboutItemStyles = styled.div`
   display: flex;
+  position: relative;
+
   align-items: center;
   justify-content: flex-start;
   margin-top: 2rem;
-  position: relative;
   .title {
     font-size: 2.4rem;
   }
   .items {
     display: flex;
-    gap: 1.5rem;
     position: absolute;
-    left: 20rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    left: 18rem;
   }
   .item {
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 8px;
   }
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;

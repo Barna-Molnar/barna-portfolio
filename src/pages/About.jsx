@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Ptext from '../components/Ptext';
 import aboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
+import ConactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -41,6 +42,32 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       border: 2px solid var(--gray-1);
+    }
+  }
+  .about__info__items {
+    margin-top: 15rem;
+  }
+  .about__info__item {
+    margin-bottom: 10rem;
+  }
+  .about__info__heading {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
+    .top-section {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .about__heading {
+      font-size: 2.8rem;
+    }
+    .about__subheading {
+      font-size: 1.8rem;
+    }
+    .about__info__heading {
+      font-size: 3rem;
     }
   }
 `;
@@ -89,12 +116,38 @@ export default function About() {
               items={['Jedlik A. Mech. Engineering & Infor. Tech Sch.']}
             />
             <AboutInfoItem
-              title="School"
+              title="Courses"
               items={['Jedlik A. Mech. Engineering & Infor. Tech Sch.']}
+            />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">My Skills</h1>
+            <AboutInfoItem
+              title="FrontEnd"
+              items={[
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'REACT',
+                'SCSS',
+
+                'Npm',
+                'Git',
+              ]}
+            />
+            <AboutInfoItem
+              title="Libraries"
+              items={[
+                'React-Bootstrap',
+                'Bootstrap',
+                'Materialize',
+                'Material UI',
+              ]}
             />
           </div>
         </div>
       </div>
+      <ConactBanner />
     </AboutPageStyles>
   );
 }
