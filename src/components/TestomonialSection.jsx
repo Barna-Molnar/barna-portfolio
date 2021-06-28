@@ -21,6 +21,7 @@ const TestimonialSectionStyes = styled.div`
     background-color: var(--deep-dark);
     border-radius: 10px;
     margin-top: 5rem;
+    /* box-shadow: 0 0 10px 0px #949393; */
   }
   .testimonial__desc {
     .para {
@@ -53,6 +54,12 @@ const TestimonialSectionStyes = styled.div`
       padding: 0.5rem 2rem;
       border-radius: 8px;
       cursor: pointer;
+      transition: 0.25s all;
+      /* box-shadow: 0 0 10px 0px #949393; */
+    }
+    .next:hover,
+    .prev:hover {
+      box-shadow: 0 0 8px 0px #949393;
     }
   }
   .fade-enter {
@@ -64,10 +71,11 @@ const TestimonialSectionStyes = styled.div`
     transform: scale(1);
     transition: 250ms ease-in;
     transition-property: opacity, transform;
+    box-shadow: none;
   }
   .fade-enter-done {
     transition: all 100ms ease-in;
-    box-shadow: 0 0 20px 0px #949393;
+    box-shadow: 0 0 10px 0px #949393;
   }
   .fade-exit {
     opacity: 1;

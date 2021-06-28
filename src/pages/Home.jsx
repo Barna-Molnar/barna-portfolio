@@ -16,7 +16,7 @@ export default function Home() {
       <ProjectsSection />
       <TestomonialSection />
       <ContactBanner />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
