@@ -35,6 +35,9 @@ const ProjectStyles = styled.div`
       }
     }
   }
+  /* .projectItem__img:hover {
+    
+  } */
   @media only screen and (max-width: 768px) {
     .projects__searchBar {
       width: 100%;

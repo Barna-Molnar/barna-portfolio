@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import projectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyle = styled.div`
+  position: relative;
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -11,6 +12,42 @@ const ProjectItemStyle = styled.div`
     border-radius: 12px;
     display: inline-block;
     border: 2px solid var(--gray-2);
+  }
+  .projectItem__img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    bottom: 0;
+    height: 400px;
+    width: 0;
+    transition: all 0.2s;
+    border: inset 2px solid var(--gray-2);
+    border-radius: 12px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  /* .projectItem__img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+
+    right: 10px;
+    bottom: 0;
+    height: 400px;
+    width: 10px;
+    transition: all 0.2s;
+    border: inset 2px solid var(--gray-2);
+    border-radius: 12px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: red;
+  }
+   */
+
+  .projectItem__img:hover::before {
+    width: 100%;
   }
   .projectItem__info {
     margin-top: 1rem;
