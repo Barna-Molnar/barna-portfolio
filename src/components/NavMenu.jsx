@@ -14,9 +14,10 @@ const NavMenuStyles = styled.div`
     width: 100%;
     padding: 1rem 0;
     background: var(--dark-bg);
+    
     ul {
         max-width: 1200px;
-        margin: 0;
+        margin: 0 auto;
         width: 90%;
         text-align: center ;
         li {

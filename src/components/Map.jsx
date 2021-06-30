@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Ptext from './Ptext';
 import MapImg from '../assets/images/map.png';
 
@@ -32,6 +33,9 @@ const MapStyles = styled.div`
   }
   .para {
     font-size: 1.6rem;
+  }
+  #mapid {
+    height: 180px;
   }
   @media only screen and (max-width: 768px) {
     background-position: 80% center;

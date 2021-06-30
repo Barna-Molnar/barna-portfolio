@@ -62,7 +62,8 @@ const HeroStyle = styled.div`
     width: 50px;
     p {
       font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-50px) rotate(90deg) rotateZ(180deg);
+      /* transform: translateY(-70px) rotate(90deg); */
       letter-spacing: 0.7rem;
       text-transform: uppercase;
     }
@@ -137,6 +138,7 @@ const HeroStyle = styled.div`
       right: 0;
       width: 20px;
       gap: 1rem;
+
       p {
         font-size: 1.3rem;
       }
@@ -166,7 +168,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
-              <p>Follow</p>
+              <p className="mirror">Follow</p>
               <img src={SocialMediaArrow} alt="" />
             </div>
             <div className="hero__social__text">

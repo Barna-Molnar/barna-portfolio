@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from '../components/Button';
 import Ptext from '../components/Ptext';
 import aboutImg from '../assets/images/about-page-img.png';
+import aboutImg2 from '../assets/images/about-page-photo.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ConactBanner from '../components/ContactBanner';
 
@@ -42,6 +43,7 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       border: 2px solid var(--gray-1);
+      filter: grayscale(1000%);
     }
   }
   .about__info__items {
@@ -105,7 +107,7 @@ export default function About() {
             <Button btnText="Dovnload CV" btnLink="#" />
           </div>
           <div className="right">
-            <img src={aboutImg} alt="" />
+            <img src={aboutImg2} alt="" />
           </div>
         </div>
         <div className="about__info__items">
@@ -117,7 +119,7 @@ export default function About() {
             />
             <AboutInfoItem
               title="Courses"
-              items={['Jedlik A. Mech. Engineering & Infor. Tech Sch.']}
+              items={['Advanced Css/Sass', 'JavaScript', 'FreeCodeCamp']}
             />
           </div>
           <div className="about__info__item">
