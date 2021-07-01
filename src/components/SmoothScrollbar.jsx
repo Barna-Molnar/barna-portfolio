@@ -1,11 +1,19 @@
-import React, { useRef } from 'react';
-import ScrollBar from 'smooth-scrollbar-react';
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Scrollbar } from 'smooth-scrollbar-react';
 
 export default function SmoothScrollbar({ children }) {
   const reference = useRef(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const scrollbar = reference.current;
+    scrollbar?.setPosition(0, 0);
+  }, [pathname]);
+
   return (
-    <div ref={reference} damping="0.9">
+    <Scrollbar ref={reference} damping="0.1">
       {children}
-    </div>
+    </Scrollbar>
   );
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import Ptext from '../components/Ptext';
-import aboutImg from '../assets/images/about-page-img.png';
 import aboutImg2 from '../assets/images/about-page-photo.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ConactBanner from '../components/ContactBanner';

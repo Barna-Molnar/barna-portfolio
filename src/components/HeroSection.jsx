@@ -174,17 +174,17 @@ export default function HeroSection() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="#" target="_target" rel="noreferrer">
+                  <a href="not valid " target="_target" rel="noreferrer">
                     FB
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_target" rel="noreferrer">
+                  <a href="not valid " target="_target" rel="noreferrer">
                     Li
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_target" rel="noreferrer">
+                  <a href="not valid " target="_target" rel="noreferrer">
                     Tw
                   </a>
                 </li>
