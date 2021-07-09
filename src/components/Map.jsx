@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { MdRoom } from 'react-icons/md';
 import Ptext from './Ptext';
 import MapImg from '../assets/images/map.png';
+import MapImg2 from '../assets/images/myLocation2.png';
 
 const MapStyles = styled.div`
-  background: url(${MapImg}) no-repeat center / cover;
+  background: url(${MapImg2}) no-repeat center / cover;
   min-height: 400px;
   .container {
     position: relative;
@@ -37,12 +38,21 @@ const MapStyles = styled.div`
   #mapid {
     height: 180px;
   }
+
+  svg {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    fill: red;
+    left: 25%;
+    top: -40%;
+  }
   @media only screen and (max-width: 768px) {
     background-position: 80% center;
   }
   @media only screen and (max-width: 768px) {
     .map__card {
-      max-width: none;
+      /* max-width: none; */
     }
   }
 `;
@@ -52,6 +62,8 @@ export default function Map() {
     <MapStyles>
       <div className="container">
         <div className="map__card">
+          <MdRoom />
+
           <h3 className="map__card__heading">Here is me</h3>
           <Ptext>BW, Backnang, Germany</Ptext>
           <a

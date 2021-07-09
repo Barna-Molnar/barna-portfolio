@@ -103,7 +103,7 @@ export default function About() {
                 nihil neque? Quae perspiciatis perferendis alias odio.
               </Ptext>
             </div>
-            <Button btnText="Dovnload CV" btnLink="#" />
+            <Button btnText="Download CV" btnLink="#" />
           </div>
           <div className="right">
             <img src={aboutImg2} alt="" />

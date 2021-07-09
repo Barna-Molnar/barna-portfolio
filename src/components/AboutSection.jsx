@@ -91,7 +91,7 @@ export default function AboutSection() {
             maxime ea nesciunt ratione unde!
           </Ptext>
           <div className="aboutSection__buttons">
-            <Button btnLink="/projects" btnText="Works" />
+            <Button btnLink="/projects" btnText="Works" outline={false}/>
             <Button btnLink="/about" btnText="Read More" outline />
           </div>
         </div>

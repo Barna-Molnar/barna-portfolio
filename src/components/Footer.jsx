@@ -58,11 +58,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Barna Molnar</h1>
-          <Ptext>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            voluptas iusto accusamus vero dolores aliquid beatae architecto ea
-            quos expedita?
-          </Ptext>
+          <Ptext>Junior Front End Web Developer</Ptext>
         </div>
         <div className="footer__col2">
           <FooterColumn
@@ -96,8 +92,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '0123456789',
-                path: 'tel: +49 62179718',
+                title: '+46 176-62179718',
+                path: 'tel: +46 176-62179718',
               },
               {
                 title: 'hanta911@gmail.com',
@@ -114,9 +110,11 @@ export default function Footer() {
           <FooterColumn
             heading="Social Links"
             links={[
-              { title: 'LinkedIn', path: 'linked.com' },
-              { title: 'Twitter', path: 'twitter.com' },
-              { title: 'Github', path: 'github.com' },
+              {
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/barnabas-molnar-front-end/',
+              },
+              { title: 'Github', path: 'https://github.com/Barna-Molnar' },
             ]}
           />
         </div>

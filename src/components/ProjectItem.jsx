@@ -12,6 +12,56 @@ const ProjectItemStyle = styled.div`
     border-radius: 12px;
     display: inline-block;
     border: 2px solid var(--gray-2);
+    position: relative;
+    .top {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 5%;
+      background-color: transparent;
+      z-index: 100;
+      transition: all 0.5s;
+    }
+    .top:hover {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .bottom:hover {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .left:hover {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .right:hover {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5%;
+      background-color: transparent;
+      transition: all 0.5s;
+    }
+    .left {
+      position: absolute;
+      left: 0;
+      width: 5%;
+      height: 100%;
+      background-color: transparent;
+      transition: all 0.5s;
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      width: 5%;
+      height: 100%;
+      background-color: transparent;
+      transition: all 0.5s;
+    }
   }
   .projectItem__img::before {
     content: '';
@@ -46,9 +96,9 @@ const ProjectItemStyle = styled.div`
   }
    */
 
-  .projectItem__img:hover::before {
+  /* .projectItem__img:hover::before {
     width: 100%;
-  }
+  } */
   .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
@@ -79,6 +129,10 @@ export default function ProjectItem({
   return (
     <ProjectItemStyle>
       <Link to="/projects" className="projectItem__img">
+        <span className="top" />
+        <span className="right" />
+        <span className="bottom" />
+        <span className="left" />
         <img src={img} alt="" />
       </Link>
       <div className="projectItem__info">

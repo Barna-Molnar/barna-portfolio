@@ -21,7 +21,7 @@ const TestimonialSectionStyes = styled.div`
     background-color: var(--deep-dark);
     border-radius: 10px;
     margin-top: 5rem;
-    /* box-shadow: 0 0 10px 0px #949393; */
+    box-shadow: 0 0 10px 0px #949393;
   }
   .testimonial__desc {
     .para {
@@ -74,7 +74,7 @@ const TestimonialSectionStyes = styled.div`
     box-shadow: none;
   }
   .fade-enter-done {
-    transition: all 100ms ease-in;
+    transition: all 100ms;
     box-shadow: 0 0 10px 0px #949393;
   }
   .fade-exit {

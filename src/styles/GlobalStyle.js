@@ -49,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
     }
     .scrollbar-track.scrollbar-track-y {
       background: var(--deep-dark);
+      z-index: 101;
      
       .scrollbar-thumb-y {
         background: var(--gray-1);

@@ -174,18 +174,21 @@ export default function HeroSection() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="not valid " target="_target" rel="noreferrer">
-                    FB
-                  </a>
-                </li>
-                <li>
-                  <a href="not valid " target="_target" rel="noreferrer">
+                  <a
+                    href="https://www.linkedin.com/in/barnabas-molnar-front-end/"
+                    target="_target"
+                    rel="noreferrer"
+                  >
                     Li
                   </a>
                 </li>
                 <li>
-                  <a href="not valid " target="_target" rel="noreferrer">
-                    Tw
+                  <a
+                    href="https://github.com/Barna-Molnar"
+                    target="_target"
+                    rel="noreferrer"
+                  >
+                    GH
                   </a>
                 </li>
               </ul>
