@@ -4,6 +4,7 @@ import UTrackerImg from '../images/utracker.jpg';
 import GreenCtgImg from '../images/greenctg.jpg';
 import CoinTrackerImg from '../images/cointracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
+import ProjektImg from '../images/Screenshot 2021-05-24 at 17.21.15.png';
 
 const projects = [
   {
@@ -11,7 +12,8 @@ const projects = [
     name: 'U Tracker',
     desc:
       'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+    // img: UTrackerImg,
+    img: ProjektImg,
   },
   {
     id: uuidv4(),

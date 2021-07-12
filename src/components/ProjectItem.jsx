@@ -17,7 +17,7 @@ const ProjectItemStyle = styled.div`
       position: absolute;
       top: 0;
       width: 100%;
-      height: 5%;
+      height: 10%;
       background-color: transparent;
       z-index: 100;
       transition: all 0.5s;
@@ -25,31 +25,35 @@ const ProjectItemStyle = styled.div`
     .top:hover {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
+      background-color: white;
     }
     .bottom:hover {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
+      background-color: white;
     }
     .left:hover {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.2);
+      background-color: white;
     }
     .right:hover {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.2);
+      background-color: white;
     }
     .bottom {
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 5%;
+      height: 10%;
       background-color: transparent;
       transition: all 0.5s;
     }
     .left {
       position: absolute;
       left: 0;
-      width: 5%;
+      width: 10%;
       height: 100%;
       background-color: transparent;
       transition: all 0.5s;
@@ -57,7 +61,7 @@ const ProjectItemStyle = styled.div`
     .right {
       position: absolute;
       right: 0;
-      width: 5%;
+      width: 10%;
       height: 100%;
       background-color: transparent;
       transition: all 0.5s;

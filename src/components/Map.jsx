@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { MdRoom } from 'react-icons/md';
 import Ptext from './Ptext';
-import MapImg from '../assets/images/map.png';
+// import MapImg from '../assets/images/map.png';
 import MapImg2 from '../assets/images/myLocation2.png';
 
 const MapStyles = styled.div`

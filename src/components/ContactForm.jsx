@@ -26,20 +26,10 @@ const FormStyle = styled.form`
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    /* -webkit-transition: 'color 9999s ease-out, background-color 9999s ease-out'; */
     -webkit-transition-delay: 9999s;
+    transition-delay: 9999s;
   }
 
-  /* 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px var(--deep-dark) inset !important;
-  }
-  input:-webkit-autofill {
-    -webkit-text-fill-color: var(--gray-1) !important;
-  } */
   textarea {
     min-height: 250px;
     resize: vertical;
