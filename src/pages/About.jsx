@@ -131,7 +131,6 @@ export default function About() {
                 'JavaScript',
                 'REACT',
                 'SCSS',
-
                 'Npm',
                 'Git',
               ]}

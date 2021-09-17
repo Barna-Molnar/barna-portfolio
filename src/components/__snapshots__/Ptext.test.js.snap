@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ptext test renders children 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdDrOH gijhgW para"
+    >
+      <p>
+        <span>
+          Almos
+        </span>
+      </p>
+    </div>
+  </div>
+</body>
+`;
