@@ -8,7 +8,7 @@ export default function SmoothScrollbar({ children }) {
 
   useEffect(() => {
     const scrollbar = reference.current;
-    console.log(scrollbar);
+
     scrollbar?.setPosition(0, 0);
   }, [pathname]);
 

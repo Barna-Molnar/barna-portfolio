@@ -67,7 +67,7 @@ export default function Projects() {
       setProjectData(ProjectInfo);
     }
   }
-  console.log(searchText, projectData);
+
   return (
     <ProjectStyles>
       <div className="container">

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
 import Button from '../components/Button';
 import Ptext from '../components/Ptext';
 import aboutImg2 from '../assets/images/about-page-photo.png';

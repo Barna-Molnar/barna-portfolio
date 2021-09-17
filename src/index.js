@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import GlobalStyles from './styles/GlobalStyle';
 import Typography from './styles/Typography';
 
 ReactDOM.render(
   <>
-    <GlobalStyles />
-    <Typography />
-    <App />
+    <Router>
+      <GlobalStyles />
+      <Typography />
+      <App />
+    </Router>
   </>,
   document.getElementById('root')
 );
